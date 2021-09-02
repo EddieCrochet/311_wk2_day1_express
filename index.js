@@ -7,6 +7,15 @@ const { users } = require('./state')
 
 /* BEGIN - create routes here */
 
+/***
+ * * GET /users
+ * Give your server the ability to respond to a GET request with a path "/users" 
+ * and return the users array from state.js 
+ */
+
+app.get("/users", (req, res) => {
+  return res.json(users);
+})
 
 /* END - create routes here */
 
